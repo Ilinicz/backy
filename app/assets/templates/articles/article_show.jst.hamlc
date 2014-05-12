@@ -1,0 +1,3 @@
+%p= @article.escape('title')
+%p= @article.escape('body')
+%a{ href: "#" } Back

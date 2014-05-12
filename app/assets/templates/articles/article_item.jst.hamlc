@@ -1,0 +1,5 @@
+%li
+  %div
+    %a{ href: "#articles/#{@article.escape('id')}" }
+      = @article.escape('title')
+

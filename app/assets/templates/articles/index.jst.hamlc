@@ -1,0 +1,6 @@
+%h1 Articles
+
+#articlesList
+  %ul#articleslist
+
+%a{:href=>"/articles#new"} New
