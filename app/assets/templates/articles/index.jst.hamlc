@@ -3,4 +3,4 @@
 #articlesList
   %ul#articleslist
 
-%a{:href=>"/articles#new"} New
+%a{href:"#articles/new"} New Article

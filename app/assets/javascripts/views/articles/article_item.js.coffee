@@ -1,8 +1,8 @@
 class Backy.Views.ArticleItem extends Backbone.View
 
-  template:  JST['articles/article_item']
+  template: JST['articles/article_item']
 
-  tagName :  'li'
+  tagName: 'li'
 
   render: ->
     $(@el).html(@template(article: @model))

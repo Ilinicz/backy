@@ -1,0 +1,16 @@
+%h1 New Article
+
+%form#new-article.form-group
+  %fieldset
+    .field
+      %label.control-label{for: "input_title"} Title
+      .controls
+        %input.form-control#new-article-title.input-xlarge{autofocus: "", name: "title", placeholder: "Input post title...", type: "text", value: @title}
+    .field
+      %label.control-label{for: "input_body"} Article body
+      .controls
+        %textarea.form-control#new-article-body.input-xlarge{name: "body", placeholder: "Input article body...", value: @body}    
+    .field
+      %input.btn.btn-primary.btn-mini{type: "submit", value: "Create"}
+      %a.btn.btn-mini{"data-type" => "cancel", href: "/#"} Cancel
+

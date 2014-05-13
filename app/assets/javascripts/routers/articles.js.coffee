@@ -19,9 +19,14 @@ class Backy.Routers.Articles extends Backbone.Router
     view = new Backy.Views.ArticlesIndex(collection: @collection)
     @showView('#content', view)
 
+  add: ->
+    view = new Backy.Views.ArticleNew(collection: @collection)
+    @showView('#content', view)
+
   show: (id) ->
     view = new Backy.Views.ArticleShow(model: @collection.get(id))
     @showView('#content', view)
+
 
   showView: (selector, view) ->
     @currentView.close() if @currentView
