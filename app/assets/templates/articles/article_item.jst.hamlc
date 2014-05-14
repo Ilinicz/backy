@@ -2,4 +2,5 @@
   %div
     %a{ href: "#articles/#{@article.escape('id')}" }
       = @article.escape('title')
-
+    %button.delete-article.btn.btn-xs.btn-danger{ href: '#'}
+      Delete
